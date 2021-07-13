@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Sep 3, 2012 12:58:04 AM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="p1.Employee" table="employee" catalog="mydb1">
+        <id name="eid" type="int">
+            <column name="eid"/>
+            <generator class="identity" />
+        </id>
+        <property name="firstno" type="string">
+            <column name="firstno" length="20" />
+        </property>
+        <property name="lastno" type="string">
+            <column name="lastno" length="20" />
+        </property>
+        <property name="email" type="string">
+            <column name="email" length="20" />
+        </property>
+    </class>
+</hibernate-mapping>
